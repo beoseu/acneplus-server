@@ -56,7 +56,7 @@ async def upload_image(file: UploadFile = File(...)):
             "status": "ok",
             "detected_types": list(classes_detected),
             "advice": advice_dict,
-            "output_image": output_image_b64,   # 👈 ส่งกลับไปด้วย
+            "output_image": output_image_b64,   
         }
 
     except Exception as e:
